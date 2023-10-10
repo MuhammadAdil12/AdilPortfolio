@@ -6,6 +6,7 @@
     <title>Adil-page</title>
     <!--the link the css-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about-me.css">
     <!--the link for font awesome-->
     <script src="https://kit.fontawesome.com/7005b8e655.js" crossorigin="anonymous"></script>
      <!-- google font link -->
@@ -33,7 +34,7 @@
                 <div id="text-inside-navbar">
                     <ul class="navbar-nav mb-2 mb-lg-0 fs-5 ms-auto text-dark me-4">
                         <li class="nav-item-2">
-                        <a class="nav-link active" id="nav-button" aria-current="page" href="#" style="--i:1;">Home</a>
+                        <a class="nav-link active" id="nav-button" aria-current="page" href="#container-area" style="--i:1;">Home</a>
                         </li>
                         <li class="nav-item-2">
                         <a class="nav-link" href="#heading-of-about-me" id="nav-button" style="--i:2;">About me</a>
@@ -54,7 +55,7 @@
         <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
             <ul class="navbar-nav mb-2 mb-lg-0 fs-5 ms-auto text-dark me-4">
                     <li class="nav-item">
-                    <a class="nav-link active" id="nav-button" aria-current="page" href="#" style="--i:1;">Home</a>
+                    <a class="nav-link active" id="nav-button" aria-current="page" href="#container-area" style="--i:1;">Home</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link"  href="#heading-of-about-me" id="nav-button" style="--i:2;">About me</a>
@@ -94,7 +95,7 @@
     </div>
     <div id="second-dev">
         <!-- <div id="landing-page-picture-div"> -->
-            <img src="adil.jpg" alt="picture of a handsome man" id="hero-img"  >
+            <img src="/images/adil.jpg" alt="picture of a handsome man" id="hero-img"  >
         <!-- </div> -->
 
 
@@ -106,15 +107,13 @@
 
 
   <!-- about me section -->
-
-   <section class="section-two-body">
+<section class="section-two-body">
     <div class="heading">
         <h1 id="heading-of-about-me">About Me</h1>
     </div>
-    <div class="container container-m overflow-hidden">
-        <section class="about">
+    <div class="container container-m">
             <div class="about-img">
-                <img src="profile-pic.png" alt="Just an image of me">
+                <img src="/images/profile-pic.png" alt="Just an image of me">
             </div>
             <div class="about-content">
                 <p>I successfully earned my GED, overcoming the challenges I faced due to my loss of formal education.
@@ -122,8 +121,6 @@
                     Every day I welcome the opportunity to expand my knowledge and abilities even as I reach non-stop personal and professional growth.
                     With each new ability I gather, I am empowered to excel and make a meaningful effect in an ever-evolving area of era.</p>
             </div>
-        </section>
-        
     </div>
 </section>
 
@@ -136,38 +133,102 @@
         </div>
     </div>
 
-        <!-- Example Code -->
-
-    <div id="section-two-of-my-work">
-
-            <div class="carousel" data-carousel>
-              <button class="carousel-button prev" data-carousel-button="prev"><span class="material-symbols-outlined">
-                arrow_back_ios
-                </span></button>
-              <button class="carousel-button next" data-carousel-button="next"><span class="material-symbols-outlined">
-                arrow_forward_ios
-                </span></button>
-              <ul data-slides>
-                <li class="slide" data-active>
-                  <a href="https://module-two-workout-project.vercel.app/" target="_blank"><img src="workoutTracker.png" alt="Nature Image #1"></a>
-                </li>
-                <li class="slide">
-                  <a href="https://muhammadadil12.github.io/weather/" target="_blank"><img src="weather.png" alt="Nature Image #2"></a>
-                </li>
-                <li class="slide">
-                  <a href="https://muhammadadil12.github.io/bootstrap-email-template/" target="_blank"><img src="bootstrap-email-template.png" alt="Nature Image #3"></a>
-                </li>
-              </ul>
+        <div class="cards-row">
+            <div class="work-card">
+                <img src="/images/workoutTracker.png" alt="weather app">
+                <p>Developed fitness application with my two siblings. This app will provide multiple features, including BMI calculation, calorie tracking, and nutrition value checking.</p>
+                <div class="card-btn">
+                    <a href=""><button class="button-28">View Site</button></a>
+                    <a href=""><button class="button-28">Source Code</button></a>
+                </div>
             </div>
-    </div>
-    
-        
-
-
+            <div class="work-card">
+                <img src="/images/shopping-list-img.png" alt="weather app">
+                <p>Created a shopping list application using JavaScript</p>
+                <div class="card-btn">
+                    <a href="https://muhammadadil12.github.io/Shopping-List/"><button class="button-28">View Site</button></a>
+                    <a href="https://github.com/MuhammadAdil12/Shopping-List"><button class="button-28">Source Code</button></a>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="/images/weather.png" alt="weather app">
+                <p>Developed a weather app that uses the Fetch API and JavaScript to display weather data.</p>
+                <div class="card-btn">
+                    <a href="https://muhammadadil12.github.io/weather/"><button class="button-28">View Site</button></a>
+                    <a href="https://github.com/MuhammadAdil12/weather"><button class="button-28">Source Code</button></a>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="/images/react-digital card.png" alt="weather app">
+                <p>My first React mini project where I create a digital business card.</p>
+                <div class="card-btn">
+                    <a href="https://digital-business-card-project.vercel.app/"><button class="button-28">View Site</button></a>
+                    <a href="https://github.com/MuhammadAdil12/Digital-Business-Card-project"><button class="button-28">Source Code</button></a>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="/images/login-UI.png" alt="weather app">
+                <p>Made a basic login UI form using HTML and CSS.</p>
+                <div class="card-btn">
+                    <a href="https://muhammadadil12.github.io/user-sign-in-muhammad-adil/"><button class="button-28">View Site</button></a>
+                    <a href="https://github.com/MuhammadAdil12/user-sign-in-muhammad-adil"><button class="button-28">Source Code</button></a>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="/images/bootstrap-email-template.png" alt="weather app">
+                <p>Made a email template using bootstrap</p>
+                <div class="card-btn">
+                    <a href="https://muhammadadil12.github.io/bootstrap-email-template/"><button class="button-28">View Site</button></a>
+                    <a href="https://github.com/MuhammadAdil12/bootstrap-email-template"><button class="button-28">Source Code</button></a>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="/images/react-airbnb-clone.png" alt="weather app">
+                <p>Created a basic Airbnb clone using React</p>
+                <div class="card-btn">
+                    <a href="https://react-airbnb-clone-ebon.vercel.app/"><button class="button-28">View Site</button></a>
+                    <a href="https://github.com/MuhammadAdil12/react-airbnb-clone"><button class="button-28">Source Code</button></a>
+                </div>
+            </div>
+        </div>
+ 
         
 </section>
 
+<!--certificates-->
 
+<section id="certificate">
+
+    <div class="heading">
+        <h1 id="heading-of-about-me">Certificates</h1>
+    </div>
+
+    <div id="section-two-of-my-work">
+
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev"><span class="material-symbols-outlined back">
+            arrow_back_ios
+            </span></button>
+          <button class="carousel-button next" data-carousel-button="next"><span class="material-symbols-outlined">
+            arrow_forward_ios
+            </span></button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="/certificate-img/certificate-1.jpg" alt="Nature Image #1">
+            </li>
+            <li class="slide">
+              <img src="/certificate-img/certificate-2.jpg" alt="Nature Image #2">
+            </li>
+            <li class="slide">
+              <img src="/certificate-img/certifition-3.jpg" alt="Nature Image #3">
+            </li>
+            <li class="slide">
+              <img src="/certificate-img/certificate-4.jpg" alt="Nature Image #3">
+            </li>
+          </ul>
+        </div>
+    </div>
+</section>
 
 <!--contact-me-section-->
 

@@ -1,0 +1,215 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* the about me section #2 section */
+ 
+.section-two-body {
+    background:linear-gradient(0deg, black, rgba(47, 45, 45,0.0)), url(/images/coding.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.heading h1 {
+    font-size: 51px;
+    color: #fff;
+    margin: 25px 0px;
+    position: relative;
+    background: linear-gradient(130deg, #17C3B2, #ffffff, #17C3B2,#ffffff, #17C3B2, #ffffff, #17C3B2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 350% 300%;
+    animation: gradient 8s ease-in-out infinite;
+}
+@keyframes gradient{
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+}
+  100% {
+  background-position: 0% 50%;
+}
+}
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-image: linear-gradient(180deg, #d3edfc 10%, #56d3c7 100%);
+}
+
+@keyframes gradient{
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+}
+  100% {
+  background-position: 0% 50%;
+}
+
+}
+
+.container-m {
+  width: 95%;
+  height: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about-img {
+ display: flex;
+ flex: 1;
+ justify-content: center;
+}
+
+.about-img img{
+  width: 300px;
+  
+}
+
+.about-img:hover img {
+    transform: scale(1.1);
+}
+.about-content {
+    flex: 1;
+}
+.about-content h2 {
+    font-size: 23px;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+.about-content p {
+    font-size: 24px;
+    line-height: 1.5; 
+    text-align: center;
+    margin: 0;
+    color: #e8e6e6;
+    background: linear-gradient(130deg, #17C3B2, #ffffff, #17C3B2,#ffffff, #17C3B2, #ffffff, #17C3B2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 350% 300%;
+    animation: gradient 8s ease-in-out infinite;
+}
+@keyframes gradient{
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+}
+  100% {
+  background-position: 0% 50%;
+}
+}
+.about-content .read-more-button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 1.5s;
+ }
+.read-more-button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+.read-more-button:hover::before {
+  width: 105%;
+ }
+.read-more-button:hover {
+  color: #111;
+ }
+ 
+
+ @media screen and (max-width: 980px) {
+
+  .about-img{
+    padding: 20px;
+  }
+
+  .about-img img {
+    max-width: 100%;
+    border-radius: 20px;
+    display: block;
+    transition: 0.5s ease;
+    padding-bottom: 70px;
+}
+
+}
+
+
+
+
+
+
+
+
+/* For about me section and social icons */
+@media screen and (max-width:786px) {
+  
+  .heading h1 {
+      font-size: 38px;
+  }
+
+  .about-content p{ 
+    font-size: 22px;
+    padding: 20px;
+  }
+
+  #contact-icon{
+    text-align: center;
+  }
+    
+  .social-icons a {
+  font-size: 1.5em;
+  color: #ffffff;
+  letter-spacing: 5px;
+
+  }
+  .container-m {
+    display: flex;
+    flex-direction: column;  
+    overflow: scroll;
+  }
+
+}
+
