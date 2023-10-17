@@ -260,12 +260,10 @@ body, head{
   margin-top: 60px;
 }
 
-
 .cards-row{
   display: grid;
   grid-auto-flow: column;
   overflow-x: scroll;
-  padding-top: 30px;
 }
 
 
@@ -281,7 +279,7 @@ body, head{
 
 .work-card{
   width: 320px;
-  height: 450px;
+  height: 440px;
   background-color: rgb(30, 30, 30);
   padding: 5px;
   border-radius: 5px;  
@@ -377,7 +375,7 @@ body, head{
 
 #my-work-div{
     width: 100vw;
-    height: 305px;
+    height: 205px;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -681,7 +679,10 @@ body, head{
 
 .contact-third-div{
     margin-top: 35px;
-  
+}
+
+.contact-third-div p{
+  margin: 0px;
 }
 
 #contact-div{
@@ -866,11 +867,6 @@ body, head{
         margin-left: -30px;
     }
 
-    .carousel-button.next,
-    .carousel-button.prev{
-      color: rgb(255, 255, 255);
-      background-color: #000000;
-    }
 }
  
 
@@ -937,7 +933,7 @@ body, head{
       
 
       .social-icons{
-        margin-left: 55px;
+        margin-left: -25px;
       }
 
       #contact-icon{
@@ -977,9 +973,18 @@ body, head{
         #my-work-section {
             height: 100%;
           }
-          .glowing-btn {
-            margin-top: 100px;
+
+          .wrapper {
+            height: 70%;
           }
+
+
+    .carousel-button.next,
+    .carousel-button.prev{
+      color: rgb(255, 255, 255);
+      background-color: #000000;
+    }
+          
 }
 
 @media only screen and (max-width: 600px) {
@@ -992,9 +997,6 @@ body, head{
       display: flex;
       justify-content: center;
       margin-top: 30px;
-  }
-  .social-icons{
-    margin-left: 10px;
   }
   
 
